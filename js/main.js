@@ -30,15 +30,24 @@ function getMealsByIng() {
         .then(result => result.json())
         .then(data => {
         console.log(data)
-            //console.log(data.meals)
-            for (const meal of data.meals) {
-                // console.log(meal)
-                console.log(meal.strMeal)
-                const newLi = document.createElement('li')
-                newLi.innerText = meal.strMeal
-                document.querySelector('ol').appendChild(newLi)
+            console.log(data.meals)
+             //0-1
+           console.log(data.meals.length)
+           console.log(Math.floor(data.meals.length*Math.random()))
+           const randomI = Math.floor(data.meals.length*Math.random())
 
-            }
+           //span, image, div
+           document.querySelector('#recipe-name').innerText = data.meals[randomI].strMeal
+           document.querySelector('img').src = data.meals[randomI].strMealThumb
+           document.querySelector('#country').innerText = data.meals[randomI].strCountry
+            // for (const meal of data.meals) {
+            //     // console.log(meal)
+            //     console.log(meal.strMeal)
+            //     const newLi = document.createElement('li')
+            //     newLi.innerText = meal.strMeal
+            //     document.querySelector('ol').appendChild(newLi)
+
+            // }
         })
         .catch(err => {
             console.log(`Error: ${err}`)
