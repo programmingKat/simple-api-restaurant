@@ -1,22 +1,17 @@
-# 🍽️ Project: Simple API 2 - Restaurant
+# Project: Restaurant API 🍽️
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone working at or managing a restaurant. 
+### Goal: A simple front-end app that displays data returned from an API
 
-### How to submit your code for review:
+## Result: A simple idea recipe randomizer
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+* An app that calls an API to fetch recipe data.
+* User inputs ingredients -> a random recipe name, image, and country of origin are displayed. 
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+## Future improvements
+
+* Add responsiveness
+* Use the recipe ID to make another API call and display a specific recipe
+* If making multiple API calls, practice using `async/await` instead of promise chaining :)
+* Display more than one recipe
+
+---
